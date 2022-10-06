@@ -6,7 +6,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 
 public class Controller  {
-	 @FXML
+	 	@FXML
 	    private Button suma;
 
 	    @FXML
@@ -90,6 +90,58 @@ public class Controller  {
 		if(texto.getText().length() != 0){
 			texto.setText(texto.getText().substring(0, texto.getText().length()-1));
 		}
+	}
+    public void completarOperacion(){
+		 String operationS = texto.getText();
+
+		 int tamano = operationS.length();
+		    String A[] = new String[100];
+
+		    String operaciones[] = new String[100];
+		    int posicion = 0;
+		    double sum = 0;
+		    String aux = "";
+
+		    operaciones[0] = "+";
+		    int index_operacion = 1;
+		    for(int i = 0; i < tamano ; i++)
+		    {
+		        if(operationS.charAt(i) == '+' || operationS.charAt(i) == '-' || operationS.charAt(i) == '*' || operationS.charAt(i) == '/')
+		        {
+		            A[posicion] = aux;
+		            operaciones[index_operacion] = String.valueOf(operationS.charAt(i));
+		            posicion++;
+		            index_operacion++;
+		            aux = "";
+		        }
+		        else
+		        {
+		            aux = aux + operationS.charAt(i);
+		        }
+		    }
+		    A[posicion] = aux;
+
+		    posicion++;
+
+		    for(int i = 0; i < posicion ; i++)
+		    {
+		    	switch(operaciones[i]){
+		    	case "+":
+		    		sum=sum+Double.parseDouble(A[i]);
+		    		break;
+		    	case "-":
+		    		sum=sum-Double.parseDouble(A[i]);
+		    		break;
+		    	case "*":
+		    		sum=sum*Double.parseDouble(A[i]);
+		    		break;
+		    	case "/":
+		    		sum=sum/Double.parseDouble(A[i]);
+		    		break;
+		    	}
+
+		    }
+		    texto.setText(String.valueOf(sum));
 	}
 
 

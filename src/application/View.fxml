@@ -25,7 +25,7 @@
          <children>
             <Button fx:id="C" mnemonicParsing="false" onAction="#vaciarTexto" prefHeight="40.0" prefWidth="55.0" text="C" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
             <Button fx:id="uno" mnemonicParsing="false" onAction="#anyadirValor" prefHeight="40.0" prefWidth="55.0" text="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
-            <Button fx:id="division" mnemonicParsing="false" onAction="#anyadirOperador" prefHeight="40.0" prefWidth="55.0" text="÷" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+            <Button fx:id="division" mnemonicParsing="false" onAction="#anyadirOperador" prefHeight="40.0" prefWidth="55.0" text="/" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
             <Button fx:id="dos" mnemonicParsing="false" onAction="#anyadirValor" prefHeight="40.0" prefWidth="55.0" text="2" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
             <Button fx:id="cuatro" mnemonicParsing="false" onAction="#anyadirValor" prefHeight="40.0" prefWidth="55.0" text="4" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
             <Button fx:id="cinco" mnemonicParsing="false" onAction="#anyadirValor" prefHeight="40.0" prefWidth="55.0" text="5" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
@@ -39,7 +39,7 @@
             <Button fx:id="borrar" mnemonicParsing="false" onAction="#eliminarValor" prefHeight="40.0" prefWidth="55.0" text="DEL" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
             <Button fx:id="cero" mnemonicParsing="false" onAction="#anyadirValor" prefHeight="40.0" prefWidth="55.0" text="0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
             <Button fx:id="coma" mnemonicParsing="false" onAction="#anyadirValor" prefHeight="40.0" prefWidth="55.0" text="," GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
-            <Button fx:id="igual" mnemonicParsing="false" prefHeight="40.0" prefWidth="55.0" text="=" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
+            <Button fx:id="igual" mnemonicParsing="false" onAction="#completarOperacion" prefHeight="40.0" prefWidth="55.0" text="=" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
             <Button fx:id="tres" mnemonicParsing="false" onAction="#anyadirValor" prefHeight="40.0" prefWidth="55.0" text="3" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
          </children>
       </GridPane>
