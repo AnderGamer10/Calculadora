@@ -91,6 +91,7 @@ public class Controller  {
 			texto.setText(texto.getText().substring(0, texto.getText().length()-1));
 		}
 	}
+
     public void completarOperacion(){
 		 String operationS = texto.getText();
 
@@ -143,6 +144,5 @@ public class Controller  {
 		    }
 		    texto.setText(String.valueOf(sum));
 	}
-
 
 }
